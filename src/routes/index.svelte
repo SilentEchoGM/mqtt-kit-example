@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
   import * as mqtt from "mqtt";
 
   console.log(mqtt);
