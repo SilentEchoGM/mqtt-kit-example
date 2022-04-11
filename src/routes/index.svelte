@@ -1,14 +1,9 @@
 <script lang="ts">
-  import { browser } from "$app/env";
   import { onMount } from "svelte";
 
-  onMount(async () => {
-    if (browser) {
-      let mqtt = await import("mqtt");
+  import * as mqtt from "mqtt";
 
-      console.log(mqtt);
-    }
-  });
+  console.log(mqtt);
 </script>
 
 <h1>Welcome to SvelteKit</h1>
